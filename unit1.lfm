@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 6
+  Height = 296
+  Top = 111
+  Width = 416
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 296
+  ClientWidth = 416
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  object RadioGroup1: TRadioGroup
+    Left = 8
+    Height = 52
+    Top = 183
+    Width = 400
+    AutoFill = True
+    Caption = 'Виберiть фiгуру:'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 3
+    Columns = 3
+    TabOrder = 4
+  end
+  object CloseButton: TButton
+    Left = 328
+    Height = 25
+    Hint = 'Натиснiть для завершення програми'
+    Top = 256
+    Width = 75
+    Caption = 'Вихiд'
+    OnClick = CloseButtonClick
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+  end
+  object PerimeterRadioButton: TRadioButton
+    Left = 32
+    Height = 17
+    Top = 208
+    Width = 74
+    Caption = 'Периметр'
+    OnClick = PerimeterRadioButtonClick
+    TabOrder = 1
+  end
+  object DiagonalRadioButton: TRadioButton
+    Left = 176
+    Height = 17
+    Top = 208
+    Width = 74
+    Caption = 'Дiагональ'
+    OnClick = DiagonalRadioButtonClick
+    TabOrder = 2
+  end
+  object RhombRadioButton: TRadioButton
+    Left = 320
+    Height = 17
+    Top = 208
+    Width = 48
+    Caption = 'Ромб'
+    OnClick = RhombRadioButtonClick
+    TabOrder = 3
+  end
+  object Panel1: TPanel
+    Left = 8
+    Height = 162
+    Top = 8
+    Width = 400
+    TabOrder = 5
+  end
+  object Button1: TButton
+    Left = 200
+    Height = 25
+    Top = 256
+    Width = 75
+    Caption = 'Очистити'
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+end
